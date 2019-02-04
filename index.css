@@ -2,6 +2,47 @@ body {
   background-color: #f2f2f2;
 }
 
+.front-page-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+}
+.info-box {
+  display: flex;
+  align-content: center;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+}
+.secondary-container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  align-items: center;
+  align-content: center;
+}
+
+.social-icon-box {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 50%;
+}
+
+.front-page-container div {
+  border: 1px #ccc solid;
+  padding: 10px;
+  align-content: center;
+  align-items: center;
+}
+
 img {
   display: block;
   margin-top: 10%;
@@ -11,88 +52,40 @@ img {
   border-radius: 30%;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 40%;
-  left: 60%;
-  transform: translate(-50%, -50%);
-}
-
-ul li {
-  list-style: none;
-  float: left;
-  margin: 5px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
+.icon {
   text-align: center;
-  background: #fff;
-  border-radius: 50%;
-  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  background: #d3d3d3;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #2d3436;
   overflow: hidden;
-  z-index: 1;
-  font-size: 50px;
-  color: #262626;
-  transform: 0.5s ease-in-out;
+  position: relative;
 }
 
-ul li:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: -100%;
-  background: #ccc;
-  z-index: -1;
-  border-radius: 50%;
-  transform: scale(0.9);
-  transition: 0.3s ease-in-out;
+.icon i {
+  line-height: 45px;
+  font-size: 35px;
+  transition: 0.2s linear;
 }
 
-ul li:hover:before {
-  left: 0;
-  transform: scale(1);
-}
-ul li:hover:after {
-  right: 0;
+.icon:hover i {
+  transform: scale(1.5);
 }
 
-ul li:nth-child(1):before {
-  background: #0077b5;
+.link-buttons {
+  font-family: "proxima nova";
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
-ul li:nth-child(2):before {
-  background: #000000;
-}
-
-ul li:nth-child(3):before {
-  background: #3b5999;
-}
-
-ul li:nth-child(4):before {
-  background: #ff002f;
-}
-
-ul li:hover .fa {
-  color: #fff;
-}
-
-.fa-linkedin {
-  color: black;
-}
-.fa-github {
-  color: black;
-}
-.fa-medium {
-  color: black;
-}
-.fa-envolope-square {
-  color: black;
-}
-
-a:link {
-  color: black;
+.link-buttons:hover {
+  background-color: #a29bfe;
+  color: white;
 }
