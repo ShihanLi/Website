@@ -14,7 +14,8 @@ h3 {
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 80px;
+  text-shadow: 0px 3px 5px #535c68;
 }
 .secondary-container {
   display: flex;
@@ -73,8 +74,13 @@ img {
   font-family: "proxima nova";
   font-weight: bold;
   font-size: 20px;
-  margin-left: 8px;
-  margin-right: 8px;
+  margin-left: -2px;
+  margin-right: -2px;
+  border-width: 1px;
+  border-color: black;
+  background-color: #f2f2f2;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .link-buttons:hover {
