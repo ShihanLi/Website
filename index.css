@@ -14,7 +14,7 @@ h3 {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
 }
 .secondary-container {
   display: flex;
@@ -30,8 +30,9 @@ h1 {
 }
 
 .front-page-container div {
-  border: 1px #ccc solid;
+  /* border: 1px #ccc solid; */
   padding: 10px;
+  flex-wrap: nowrap;
 }
 
 img {
@@ -81,6 +82,7 @@ img {
   color: white;
 }
 .front-page-container {
+  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
