@@ -2,47 +2,45 @@ body {
   background-color: #f2f2f2;
 }
 
-.info-box {
-  display: flex;
-  align-content: center;
-}
-
-h1,
-h2,
-h3 {
-  text-align: center;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 0px;
+  width: 25%;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 88px;
   text-shadow: 0px 3px 5px #535c68;
+  text-align: center;
 }
-.secondary-container {
+
+h3 {
+  text-align: center;
+  font-size: 28px;
+  font-family: "Playfair Display", serif;
+  font-weight: 100;
+}
+.link-buttons {
+  font-family: "proxima nova";
+  font-weight: bold;
+  font-size: 25px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-color: black;
+  background-color: #f2f2f2;
+}
+
+.link-buttons:hover {
+  background-color: #a29bfe;
+  color: white;
+}
+
+.buttons-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-}
-
-.social-icon-box {
-  display: flex;
-  justify-content: space-around;
-  flex-basis: 50%;
-}
-
-.front-page-container div {
-  /* border: 1px #ccc solid; */
-  padding: 10px;
-  flex-wrap: nowrap;
-}
-
-img {
-  display: block;
-  margin-top: 10%;
-  margin-left: 15%;
-  margin-right: auto;
-  width: 20%;
-  border-radius: 30%;
+  justify-content: center;
 }
 
 .icon {
@@ -53,9 +51,10 @@ img {
   background: #d3d3d3;
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 30px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #00000070;
-  color: #2d3436;
+  color: black;
   overflow: hidden;
   position: relative;
 }
@@ -70,28 +69,15 @@ img {
   transform: scale(1.5);
 }
 
-.link-buttons {
-  font-family: "proxima nova";
-  font-weight: bold;
-  font-size: 20px;
-  margin-left: -2px;
-  margin-right: -2px;
-  border-width: 1px;
-  border-color: black;
-  background-color: #f2f2f2;
-  padding-left: 16px;
-  padding-right: 16px;
+.social-icon-box {
+  display: flex;
+  justify-content: center;
+  flex-basis: 20%;
 }
 
-.link-buttons:hover {
-  background-color: #a29bfe;
-  color: white;
-}
-.front-page-container {
-  height: 100vh;
+.short-intro {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  align-content: center;
   justify-content: center;
+  margin-left: 20%;
+  margin-right: 20%;
 }
