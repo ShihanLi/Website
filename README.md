@@ -1,11 +1,38 @@
-IMPLEMENTATION:
+# create-svelte
 
-1. Did not meet html standard because button tag is inside a tag on 3 separate occasions.
-2. Everything else has been implemented correctly.
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-HELP:
+## Creating a project
 
-TA Michael helped me with using flexbox
+If you're seeing this, you've probably already done this step. Congrats!
 
-HOURS:
-I spent about 10 hours on this assignment. But mostly because I wasn't happy with my design and my implementation of flexbox, so I redid it.
+```bash
+# create a new project in the current directory
+npm create svelte@latest
+
+# create a new project in my-app
+npm create svelte@latest my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
